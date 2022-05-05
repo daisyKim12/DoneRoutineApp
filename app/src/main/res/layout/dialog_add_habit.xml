@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/dialog_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="CREATE"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="name my habit"
+            android:textColor="#B1B1B1"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:paddingStart="7dp"
+            android:textSize="12sp"
+            android:textColor="#B1B1B1"
+            android:textColorHint="#B1B1B1"
+            android:background="@drawable/dialog_edittext"
+            android:hint="workout, study, yoga, etc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="build or quit this habit"
+            android:textColor="#B1B1B1"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <RadioButton
+                android:id="@+id/radio_build"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="build"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"/>
+            <RadioButton
+                android:id="@+id/radio_quit"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginLeft="7dp"
+                android:text="quit"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:text="set goal"
+            android:textColor="#B1B1B1"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edit_goal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingStart="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#B1B1B1"
+            android:textSize="12sp"
+            android:inputType="numberDecimal"
+            android:textColorHint="#B1B1B1"
+            android:background="@drawable/dialog_edittext"
+            android:hint="100days"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:text="set days"
+            android:textColor="#B1B1B1"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/check_mon"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:text="mon"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"/>
+            <CheckBox
+                android:id="@+id/check_tue"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7dp"
+                android:text="tue"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"/>
+            <CheckBox
+                android:id="@+id/check_wed"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7dp"
+                android:text="wed"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"/>
+            <CheckBox
+                android:id="@+id/check_thu"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7dp"
+                android:text="thu"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"/>
+            <CheckBox
+                android:id="@+id/check_fri"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7dp"
+                android:text="fri"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"/>
+            <CheckBox
+                android:id="@+id/check_sat"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7dp"
+                android:text="sat"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"/>
+            <CheckBox
+                android:id="@+id/check_sun"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7dp"
+                android:text="sun"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:text="group"
+            android:textColor="#B1B1B1"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edit_group"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingStart="7dp"
+            android:layout_margin="10dp"
+            android:textSize="12sp"
+            android:textColor="#B1B1B1"
+            android:textColorHint="#B1B1B1"
+            android:background="@drawable/dialog_edittext"
+            android:hint="morning, night, health"/>
+
+        <TextView
+            android:id="@+id/tv_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:text="group color"
+            android:textColor="#B1B1B1"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/color_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#F44336"
+                android:minWidth="0dp"
+                android:minHeight="0dp"/>
+            <RadioButton
+                android:id="@+id/color_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#E91E63"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+            <RadioButton
+                android:id="@+id/color_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#9C27B0"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+            <RadioButton
+                android:id="@+id/color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#3F51B5"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+            <RadioButton
+                android:id="@+id/color_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#03A9F4"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+            <RadioButton
+                android:id="@+id/color_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#009688"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+            <RadioButton
+                android:id="@+id/color_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#8BC34A"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+            <RadioButton
+                android:id="@+id/color_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFC107"
+                android:minWidth="0dp"
+                android:minHeight="0dp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="notification"
+                android:textColor="#B1B1B1"
+                android:textSize="15sp" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swt_ntf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:thumb="@drawable/thumb"
+                app:track="@drawable/track"
+                android:checked="false"
+                app:showText="true"
+                android:textOn="on"
+                android:textOff="off"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/create_cancel_btn"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="cancel"
+                android:background="@drawable/radio_unselected"
+                android:textSize="15sp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/create_save_btn"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="save"
+                android:background="@drawable/radio_unselected"
+                android:textSize="15sp"
+                android:enabled="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

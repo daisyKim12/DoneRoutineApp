@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/main_nav_today"
+        android:icon="@drawable/today"
+        android:title="today"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/main_nav_total"
+        android:icon="@drawable/grid"
+        android:title="group"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/main_nav_list"
+        android:icon="@drawable/list"
+        android:title="list"
+        app:showAsAction="withText"/>
+
+</menu>

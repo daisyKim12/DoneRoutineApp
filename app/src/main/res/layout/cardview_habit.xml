@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/habit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <TextView
+            android:id="@+id/habit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/habit_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="detail"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/habit_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginRight="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/add"
+            android:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

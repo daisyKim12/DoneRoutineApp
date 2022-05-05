@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/dialog_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="SETTING"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:text="Sort habit"
+            android:textColor="#B1B1B1"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="7dp">
+
+            <RadioButton
+                android:id="@+id/rb_alph"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="alphabet"
+                android:textSize="15sp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"/>
+            <RadioButton
+                android:id="@+id/rb_first"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="first"
+                android:textSize="15sp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"/>
+            <RadioButton
+                android:id="@+id/rb_last"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="last"
+                android:textSize="15sp"
+                android:background="@drawable/radio_selector"
+                android:button="@android:color/transparent"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="dark mode"
+                android:textColor="#B1B1B1"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swt_setting_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:thumb="@drawable/thumb"
+                app:track="@drawable/track"
+                android:checked="false"
+                app:showText="true"
+                android:textOn="on"
+                android:textOff="off"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="notification"
+                android:textColor="#B1B1B1"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swt_setting_ntf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:thumb="@drawable/thumb"
+                app:track="@drawable/track"
+                android:checked="false"
+                app:showText="true"
+                android:textOn="on"
+                android:textOff="off"/>
+
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/setting_save_btn"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/radio_unselected"
+            android:layout_gravity="center_horizontal"
+            android:text="save"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
